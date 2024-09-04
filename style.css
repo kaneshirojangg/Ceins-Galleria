@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif; 
+}
+
+.container {
+  background: url(assets/landingpg.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  position: fixed;
+  display: block;
+  overflow: visible;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  background: rgb(25,58,112);
+background: linear-gradient(180deg, rgba(25,58,112,1) 16%, rgba(92,138,188,1) 80%);
+}
+
+.left-nav img {
+  width: 120px;
+  height: 120px;
+  margin-left: 60px;
+}
+
+nav a {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(36,230,242);
+  gap: 40px;
+  transition: color 0.4s ease;
+}
+
+a:hover {
+  color: white;
+}
+
+.mid-nav {
+  font-size: 20px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.mid-nav button {
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(255, 255, 255);
+	font-size:20px;
+	font-weight:bold;
+	padding:9px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+  border-style: none;
+  margin-right: 20px;
+}
+
+.mid-nav button:hover {
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+  color: rgb(36,230,242);
+
+}
+
+.mid-nav button:active {
+  position:relative;
+	top:1px;
+}
+
+.name {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 80px;
+  padding-top: 200px;
+  text-align: center;
+  color: white
+}
+
+.scrolldown {
+  font-size: 15px;
+  color: white;
+  margin-top: 17rem;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sec-about {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(49, 78, 108);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rem 8rem;
+}
+
+.sec-right {
+  width: 70ch;
+}
+
+.sec-right p {
+  line-height: 2;
+  color: rgb(234, 230, 230);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+.sec-right h3 {
+  color: rgb(255,255,191);
+  font-size: 40px;
+}
+
+.sec-about img {
+  width: 60vh;
+  border-radius: 50px;
+  box-shadow: rgba(27, 27, 35, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(20, 60, 99, 0.35) 0px -2px 6px 0px inset;
+}
+
+.sec-arts {
+  background-color: rgb(50, 74, 100);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  padding-top: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.innercontent {
+  padding-top: 70px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.artworkh1 {
+  color: white;
+  margin-bottom: 10px;
+  display: block;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 19rem 19rem 19rem;
+  grid-auto-rows: 22rem;
+  box-sizing: border-box;
+  grid-gap: 3rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+
+.griditemwrap img {
+  object-fit: cover;
+  min-width: 100%;
+  height: 20rem;
+  display: block;
+  box-sizing: border-box;
+}
+
+.griditemtext {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sec-artshows {
+  background-color: rgb(37, 56, 77);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  padding-bottom: 60px;
+}
+
+.artvid-innercontent {
+  padding-top: 90px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.artvidh1 {
+  color: white;
+  margin-bottom: 10px;
+  display: block;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.artvideo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 8rem 1rem;
+}
+
+.artvideo {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-style: solid;
+  border-color: white;
+  border-radius: 16px;
+}
+
+.artvid-des {
+  padding-left: 4rem;
+}
+
+.vid-title {
+  color: white;
+  font-size: 29px;
+}
+
+.artvid-des p {
+  line-height: 2;
+  color: rgb(191,191,191);
+}
+
+.sec-footer {
+  background-color: rgb(12, 19, 26);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  padding-bottom: 60px;
+  height: 35%;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 120px;
+  height: 120px;
+  padding-top: 2rem;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem;
+    grid-auto-rows: 19rem;
+    grid-gap: 10rem;
+    margin: 0;
+}
+
+.navlinks {
+  color: white;
+  font-size: 25px;
+}
+
+.item1 {
+  align-items: center;
+  display: block;
+  box-sizing: inherit;
+}
+
+.item1 ul {
+  list-style-type: none;
+}
+
+.item1 a {
+  line-height: 2rem;
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  transition: color 0.4s ease;
+}
+
+.item1 a:hover {
+  color: rgb(1,212,240);
+}
+
+.item2 {
+  align-items: center;
+  display: block;
+  box-sizing: inherit;
+}
+
+.item2 ul {
+  list-style-type: none;
+}
+
+.item2 a {
+  line-height: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.svg-icons {
+  height: 30px;
+  width: 30px;
+  padding-right: 5px;
+  padding-left: 5px;
+  fill: white;
+  transition: fill 0.4s ease;
+}
+
+.svg-icons :hover {
+  fill: rgb(1,212,240);
+}
+
+.item3 {
+  align-items: center;
+  display: block;
+  box-sizing: inherit;
+}
+
+.item3 ul {
+  list-style-type: none;
+}
+
+.item3 li {
+  line-height: 2rem;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.4s ease;
+}
+
+.item3 a:hover {
+  color: rgb(1,212,240);
+}

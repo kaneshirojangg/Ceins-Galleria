@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --card-color: rgb(25, 25, 25);
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  width: 100%;
+  display: grid;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;  
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif; 
+}
+
+.nav-container {
+  background-color: rgb(31, 46, 62);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding: 3px;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  background: rgb(25,58,112);
+background: linear-gradient(180deg, rgba(25,58,112,0.8380602240896359) 16%, rgba(92,138,188,0.5971638655462185) 80%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.logo img {
+  width: 120px;
+  height: 120px;
+  margin-left: 60px;
+}
+
+.title {
+  justify-content: center;
+  display: flex;
+  padding-top: 10rem;
+  color: white;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 50px;
+  margin: 0;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 15rem 15rem 15rem;
+  grid-auto-rows: 15rem;
+  grid-gap: 3rem;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,161,195);
+  border-radius: 2rem;
+  border: solid rgb(177,236,247) 5px;
+}
+
+.inner {
+  text-align: center;
+  padding: 40px;
+}
+
+.inner-title {
+  color: white;
+  font-size: 19px;
+}
+
+.descr {
+  color: white;
+  font-size: 13px;
+}
+
+.links a {
+  text-decoration: none;
+  color: rgb(255,255,191);
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.links :hover {
+  color: rgb(111, 97, 174);
+}
+
+.svg-icons {
+  height: 30px;
+  width: 30px;
+  padding-right: 5px;
+  padding-left: 5px;
+  fill: rgb(255,255,191);
+  transition: fill 0.4s ease;
+}
+
+.svg-icons :hover {
+  fill: rgb(111, 97, 174);
+}
+
